@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack-D.Pirates Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-title">HACK-D.PIRATES</div>
+        <div class="header-right">
+            <div id="temperature" class="header-icon" title="Current Temperature">25°C</div>
+            <div id="battery" class="header-icon" title="Battery Percentage">
+                <span class="battery-icon">🔋</span> <span id="battery-percentage">85%</span>
+            </div>
+            <div id="profile" class="header-icon profile" title="Profile">P</div>
+        </div>
+    </header>
+
+    <!-- Sidebar Section -->
+    <nav class="sidebar">
+        <ul>
+            <li id="user-profile">👤 User Profile / Sign In & Log In</li>
+            <li id="live-tracking">📍 Live Tracking of Vehicle</li>
+            <li id="drivers-score">🎮 Driver's Score</li>
+            <li id="store">🛒 Store</li>
+            <li id="settings">⚙️ Settings</li>
+        </ul>
+    </nav>
+
+    <!-- Main Body Section -->
+    <main>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <!-- Login Modal -->
+    <div class="login-modal hidden" id="loginModal">
+        <div class="container">
+            <div class="left-panel">
+                <header>
+                    <h1>Hack-d.Pirates</h1>
+                </header>
+                <div class="image-container">
+                    <img src="download.jpg" alt="UrbanFlow" />
+                    <p>Innovating Roads, Saving Lives</p>
+                </div>
+            </div>
+            <div class="right-panel">
+                <h2>Sign In</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required />
+                    </div>
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>Home</div>
+        <div>Back</div>
+        <div>Help</div>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script async defer
+        src="cdee45a6f645603d460616def7f16f3b">
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
