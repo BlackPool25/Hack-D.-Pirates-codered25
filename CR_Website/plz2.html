@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack-D.Pirates Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-title">HACK-D.PIRATES</div>
+        <div class="header-right">
+            <div id="temperature" title="Current Temperature">18°C</div>
+            <div id="battery" title="Battery Percentage">
+                <span class="battery-icon">🔋</span> <span id="battery-percentage">63%</span>
+            </div>
+            <div id="profile" class="header-icon" title="Profile">👤</div>
+        </div>
+    </header>
+
+    <!-- Sidebar Section -->
+    <nav class="sidebar">
+        <ul>
+            <li id="user-profile">👤 User Profile / Sign In & Log In</li>
+            <li id="live-tracking">📍 Live Tracking of Vehicle</li>
+            <li id="drivers-score">🎮 Driver's Score</li>
+            <li id="store">🛒 Store</li>
+            <li id="settings">⚙️ Settings</li>
+        </ul>
+    </nav>
+
+    <!-- Main Body Section -->
+    <main>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button id="accident-btn" class="action-btn" title="Report Accident">🚗💥 Accident</button>
+        <button id="help-btn" class="action-btn" title="Request Help">🆘 Need Help</button>
+        <button id="towing-btn" class="action-btn" title="Request Car Towing">🚙 Towing</button>
+        <button id="overspeeding-btn" class="action-btn" title="Report Overspeeding">🏎️💨 Overspeeding</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>Home</div>
+        <div>Back</div>
+        <div>Help</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+    <script src="scripts2.js"></script>
+</body>
+</html>
